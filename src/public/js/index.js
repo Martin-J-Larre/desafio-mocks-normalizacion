@@ -60,6 +60,8 @@ function getDenormalizedMessages(normalizedMessages) {
 
 	messageCenterTitle.innerHTML = `Messages Center - Compression: ${compressionPercentage}`;
 
+    console.log('Compression is:',compressionPercentage);
+
 	return messages;
 }
 

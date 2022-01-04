@@ -39,7 +39,7 @@ app.use("/api/chat", chatRouter);
 
 //-----------------Server Listen
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8000;
 
 const server = app.listen(PORT, () => {
 	console.log(`Connected to URL:: http://localhost:${server.address().port}`);

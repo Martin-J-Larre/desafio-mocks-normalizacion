@@ -5,6 +5,8 @@ const authorSchema = new schema.Entity("authors");
 const messageSchema = new schema.Entity("messages", { author: authorSchema }, { idAttribute: "_id" });
 const messagesSchema = [messageSchema];
 
+//// console.log("messagesSchema", messagesSchema);
+
 class MessagesServices {
 	constructor(collection) {
 		this.collection = collection;

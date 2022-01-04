@@ -1,7 +1,6 @@
 import { MongoClient } from "mongodb";
-// const uri =
+const uri = "mongodb://localhost/ecommerce";
 
-// !cambiar Uri
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 await client.connect();
